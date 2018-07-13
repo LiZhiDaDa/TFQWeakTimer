@@ -5,9 +5,9 @@
 目前只支持在主线程运行循环方法，如果你有在其他线程运行方法的需求可以联系我，我再增加在子线程运行的方法。到时候就涉及到```NSRunloop```的知识了。
 
 ### TFQWeakTimer使用方法
-1、将```TFQWeakTimer```类拖到自己项目中。
+1、将```TFQWeakTimer```文件拖到自己项目中。
 
-2、通过```initWithXXX```方法创建定时器.
+2、导入```"TFQWeakTimer.h"```通过```initWithXXX```方法创建定时器.
 
 3、在需要销毁```TFQWeakTimer```或者当前类```dealloc```的时候调用```TFQWeakTimer```中的对象方法```invalidateTimer```销毁```TFQWeakTimer```
 
