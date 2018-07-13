@@ -58,7 +58,7 @@
 		F79B239120F8493400FCCC9B /* TFQWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
-				F79B23A820F849B900FCCC9B /* TFQWeakTimer */,
+				F79B23A820F849B900FCCC9B /* WeakTimer */,
 				F79B239220F8493400FCCC9B /* AppDelegate.h */,
 				F79B239320F8493400FCCC9B /* AppDelegate.m */,
 				F79B239520F8493400FCCC9B /* ViewController.h */,
@@ -72,11 +72,11 @@
 			path = TFQWeakTimer;
 			sourceTree = "<group>";
 		};
-		F79B23A820F849B900FCCC9B /* TFQWeakTimer */ = {
+		F79B23A820F849B900FCCC9B /* WeakTimer */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = TFQWeakTimer;
+			path = WeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +105,7 @@
 		F79B238720F8493400FCCC9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TFQ;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Thread_Fight_Queue;
 				TargetAttributes = {
