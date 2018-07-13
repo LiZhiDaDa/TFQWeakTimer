@@ -18,22 +18,32 @@
 
 @implementation TFQWeakTimer
 
-- (instancetype)initWithTarget:(id)target andTimeInterval:(NSTimeInterval)timeInterval andSelector:(SEL)selector{
+///创建不带参数的定时器
+- (instancetype)initWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector{
+    return [self initWithTimeInterval:ti target:aTarget selector:aSelector userInfo:nil];
+}
+
+///创建带参数的定时器
+- (instancetype)initWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo{
     if(self == [super init]){
-        self.target = target;
-        self.selector = selector;
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(repeatAction) userInfo:nil repeats:YES];
+        self.target = aTarget;
+        self.selector = aSelector;
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector(repeatAction:) userInfo:userInfo repeats:YES];
     }
     return self;
 }
 
-- (void)repeatAction{
+- (void)repeatAction:(NSTimer *)timer{
     //在主线程异步执行方法，防止阻塞。
     dispatch_async(dispatch_get_main_queue(), ^{
         id target = self.target;
         SEL selector = self.selector;
         if([target respondsToSelector:selector]){
-            [target performSelector:selector];
+            if (timer.userInfo) {
+                [target performSelector:selector withObject:timer];
+            }else{
+                [target performSelector:selector];
+            }
         }
     });
 }

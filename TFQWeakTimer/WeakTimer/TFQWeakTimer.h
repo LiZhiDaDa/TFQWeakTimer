@@ -10,8 +10,11 @@
 
 @interface TFQWeakTimer : NSObject
 
-- (instancetype)initWithTarget:(id)target andTimeInterval:(NSTimeInterval)timeInterval andSelector:(SEL)selector;
-
+///创建不带参数的定时器
+- (instancetype)initWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector;
+///创建带参数的定时器
+- (instancetype)initWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo;
+///销毁定时器
 - (void)invalidateTimer;
 
 @end

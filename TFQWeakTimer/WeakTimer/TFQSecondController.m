@@ -27,17 +27,19 @@
     self.label = [[UILabel alloc] initWithFrame:CGRectMake(40, 80, 100, 40)];
     [self.view addSubview:self.label];
     
-    self.weakTimer = [[TFQWeakTimer alloc] initWithTarget:self andTimeInterval:1 andSelector:@selector(repeatAction)];
-    
+//    self.weakTimer = [[TFQWeakTimer alloc] initWithTarget:self andTimeInterval:1 andSelector:@selector(repeatAction:)];
+    NSDictionary *dict = @{@"name" : @"zhangsna"};
+    self.weakTimer = [[TFQWeakTimer alloc] initWithTimeInterval:1 target:self selector:@selector(repeatAction:) userInfo:dict];
 }
 
-- (void)repeatAction{
+- (void)repeatAction:(NSTimer *)timer{
+    NSLog(@"%@",timer.userInfo);
     self.countDown --;
     self.label.text = [NSString stringWithFormat:@"倒计时%d秒",self.countDown];
 }
 
 - (void)dealloc{
-//    [self.weakTimer invalidateTimer];
+    [self.weakTimer invalidateTimer];
     NSLog(@"secondController dealloc");
 }
 
