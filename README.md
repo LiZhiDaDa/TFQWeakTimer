@@ -4,7 +4,9 @@
 
 ### TFQWeakTimer使用方法
 1、将```TFQWeakTimer```类拖到自己项目中。
+
 2、通过```initWithXXX```方法创建定时器.
+
 3、在需要销毁```TFQWeakTimer```或者当前类```dealloc```的时候调用```TFQWeakTimer```中的对象方法```invalidateTimer```销毁```TFQWeakTimer```
 
 ### 期待：
