@@ -40,9 +40,17 @@
         SEL selector = self.selector;
         if([target respondsToSelector:selector]){
             if (timer.userInfo) {
-                [target performSelector:selector withObject:timer];
+                //同样用下边的方法解决，
+                //[target performSelector:selector withObject:timer];
+                IMP imp = [target methodForSelector:selector];
+                void (*func)(id, SEL, NSTimer*) = (void *)imp;
+                func(target, selector, timer);
             }else{
-                [target performSelector:selector];
+                //这种方式调用方法会报警告，所以用下边的方法解决，这是专门儿给有警告强迫症的孩子的福利。
+                //[target performSelector:selector];
+                IMP imp = [target methodForSelector:selector];
+                void (*func)(id, SEL) = (void *)imp;
+                func(target, selector);
             }
         }
     });
