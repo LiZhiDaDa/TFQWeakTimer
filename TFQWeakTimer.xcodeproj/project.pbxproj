@@ -13,6 +13,8 @@
 		F79B239C20F8493400FCCC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79B239B20F8493400FCCC9B /* Assets.xcassets */; };
 		F79B239F20F8493400FCCC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79B239D20F8493400FCCC9B /* LaunchScreen.storyboard */; };
 		F79B23A220F8493500FCCC9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79B23A120F8493500FCCC9B /* main.m */; };
+		F79B23AB20F84A6100FCCC9B /* TFQWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F79B23AA20F84A6100FCCC9B /* TFQWeakTimer.m */; };
+		F79B23AE20F84AA600FCCC9B /* TFQSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F79B239E20F8493400FCCC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79B23A020F8493400FCCC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79B23A120F8493500FCCC9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F79B23A920F84A6100FCCC9B /* TFQWeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWeakTimer.h; sourceTree = "<group>"; };
+		F79B23AA20F84A6100FCCC9B /* TFQWeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWeakTimer.m; sourceTree = "<group>"; };
+		F79B23AC20F84AA600FCCC9B /* TFQSecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSecondController.h; sourceTree = "<group>"; };
+		F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSecondController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,10 @@
 		F79B23A820F849B900FCCC9B /* WeakTimer */ = {
 			isa = PBXGroup;
 			children = (
+				F79B23A920F84A6100FCCC9B /* TFQWeakTimer.h */,
+				F79B23AA20F84A6100FCCC9B /* TFQWeakTimer.m */,
+				F79B23AC20F84AA600FCCC9B /* TFQSecondController.h */,
+				F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */,
 			);
 			path = WeakTimer;
 			sourceTree = "<group>";
@@ -151,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79B239720F8493400FCCC9B /* ViewController.m in Sources */,
+				F79B23AB20F84A6100FCCC9B /* TFQWeakTimer.m in Sources */,
 				F79B23A220F8493500FCCC9B /* main.m in Sources */,
 				F79B239420F8493400FCCC9B /* AppDelegate.m in Sources */,
+				F79B23AE20F84AA600FCCC9B /* TFQSecondController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
