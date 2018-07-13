@@ -64,11 +64,13 @@
 		F79B239120F8493400FCCC9B /* TFQWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
-				F79B23A820F849B900FCCC9B /* WeakTimer */,
+				F79B23A820F849B900FCCC9B /* TFQWeakTimer */,
 				F79B239220F8493400FCCC9B /* AppDelegate.h */,
 				F79B239320F8493400FCCC9B /* AppDelegate.m */,
 				F79B239520F8493400FCCC9B /* ViewController.h */,
 				F79B239620F8493400FCCC9B /* ViewController.m */,
+				F79B23AC20F84AA600FCCC9B /* TFQSecondController.h */,
+				F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */,
 				F79B239820F8493400FCCC9B /* Main.storyboard */,
 				F79B239B20F8493400FCCC9B /* Assets.xcassets */,
 				F79B239D20F8493400FCCC9B /* LaunchScreen.storyboard */,
@@ -78,15 +80,13 @@
 			path = TFQWeakTimer;
 			sourceTree = "<group>";
 		};
-		F79B23A820F849B900FCCC9B /* WeakTimer */ = {
+		F79B23A820F849B900FCCC9B /* TFQWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
 				F79B23A920F84A6100FCCC9B /* TFQWeakTimer.h */,
 				F79B23AA20F84A6100FCCC9B /* TFQWeakTimer.m */,
-				F79B23AC20F84AA600FCCC9B /* TFQSecondController.h */,
-				F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */,
 			);
-			path = WeakTimer;
+			path = TFQWeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
