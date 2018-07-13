@@ -29,7 +29,7 @@
     
 //    self.weakTimer = [[TFQWeakTimer alloc] initWithTarget:self andTimeInterval:1 andSelector:@selector(repeatAction:)];
     NSDictionary *dict = @{@"name" : @"zhangsna"};
-    self.weakTimer = [[TFQWeakTimer alloc] initWithTimeInterval:1 target:self selector:@selector(repeatAction:) userInfo:nil];
+    self.weakTimer = [[TFQWeakTimer alloc] initWithTimeInterval:1 target:self selector:@selector(repeatAction:) userInfo:dict];
 }
 
 - (void)repeatAction:(NSTimer *)timer{
