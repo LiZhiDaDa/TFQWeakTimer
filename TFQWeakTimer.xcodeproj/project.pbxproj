@@ -58,6 +58,7 @@
 		F79B239120F8493400FCCC9B /* TFQWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
+				F79B23A820F849B900FCCC9B /* TFQWeakTimer */,
 				F79B239220F8493400FCCC9B /* AppDelegate.h */,
 				F79B239320F8493400FCCC9B /* AppDelegate.m */,
 				F79B239520F8493400FCCC9B /* ViewController.h */,
@@ -67,6 +68,13 @@
 				F79B239D20F8493400FCCC9B /* LaunchScreen.storyboard */,
 				F79B23A020F8493400FCCC9B /* Info.plist */,
 				F79B23A120F8493500FCCC9B /* main.m */,
+			);
+			path = TFQWeakTimer;
+			sourceTree = "<group>";
+		};
+		F79B23A820F849B900FCCC9B /* TFQWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = TFQWeakTimer;
 			sourceTree = "<group>";
