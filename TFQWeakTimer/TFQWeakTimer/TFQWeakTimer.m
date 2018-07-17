@@ -38,7 +38,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         //这里用一个新变量持有他，是为了防止在下边if([target respondsToSelector:selector])判断完之后，
         //有线程修改了target或者selector的情况， 酱紫用变量持有他的话就不怕被修改了。
-        //不过这种情况一般还是很少出现的。
+        //不过这种情况一般还是很少出现的。等我把多线程的只是吃的透一点再跟大家解释
         id target = self.target;
         SEL selector = self.selector;
         if([target respondsToSelector:selector]){
