@@ -32,8 +32,8 @@
     self.label = [[UILabel alloc] initWithFrame:CGRectMake(40, 80, 100, 40)];
     [self.view addSubview:self.label];
     
-    //    self.weakTimer = [[TFQWeakTimer alloc] initWithTarget:self andTimeInterval:1 andSelector:@selector(repeatAction:)];
-    NSDictionary *dict = @{@"name" : @"zhangsna"};
+    //self.weakTimer = [[TFQWeakTimer alloc] initWithTarget:self andTimeInterval:1 andSelector:@selector(repeatAction:)];
+    //NSDictionary *dict = @{@"name" : @"zhangsna"};
     //方式一
     //self.weakTimer = [[TFQWeakTimer alloc] initWithTimeInterval:1 target:self selector:@selector(repeatAction:) userInfo:dict];
     //方式二   比方式三效率低一点
