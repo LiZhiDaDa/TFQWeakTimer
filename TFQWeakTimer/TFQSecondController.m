@@ -10,6 +10,7 @@
 #import "TFQWeakTimer.h"
 #import "TFQProxy/TFQProxy.h"
 #import "TFQProxySubclass.h"
+#import "TFQGCDTimer.h"
 
 @interface TFQSecondController ()
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong)TFQWeakTimer *weakTimer;
 //方式二
 @property (nonatomic, strong)NSTimer *timer;
+@property (nonatomic, copy)NSString *timerIdentifier;
 
 @end
 
@@ -39,7 +41,12 @@
     //方式二   比方式三效率低一点
     //self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:[TFQProxy proxyWithTarget:self] selector:@selector(repeatAction:) userInfo:nil repeats:YES];
     //方式三
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:[TFQProxySubclass proxyWithTarget:self] selector:@selector(repeatAction:) userInfo:nil repeats:YES];
+    //self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:[TFQProxySubclass proxyWithTarget:self] selector:@selector(repeatAction:) userInfo:nil repeats:YES];
+    //方式四
+    __weak typeof(self) weakSelf = self;
+    self.timerIdentifier = [TFQGCDTimer schedleTask:^{
+        [weakSelf repeatAction:nil];
+    } interval:1 repeat:YES async:NO reuseIdentifier:@"identifier"];
 }
 
 - (void)repeatAction:(NSTimer *)timer{
@@ -51,6 +58,7 @@
 - (void)dealloc{
     [self.weakTimer invalidateTimer];
     [self.timer invalidate];
+    [TFQGCDTimer cancelTimer:self.timerIdentifier];
     NSLog(@"secondController dealloc");
 }
 
