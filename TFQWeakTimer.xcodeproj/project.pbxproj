@@ -17,6 +17,7 @@
 		F79B23AE20F84AA600FCCC9B /* TFQSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79B23AD20F84AA600FCCC9B /* TFQSecondController.m */; };
 		F7B704F221F023170033D3BA /* TFQProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F121F023170033D3BA /* TFQProxy.m */; };
 		F7B704F521F023520033D3BA /* TFQProxySubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F421F023520033D3BA /* TFQProxySubclass.m */; };
+		F7B704F921F08E070033D3BA /* TFQGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F821F08E070033D3BA /* TFQGCDTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		F7B704F121F023170033D3BA /* TFQProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQProxy.m; sourceTree = "<group>"; };
 		F7B704F321F023520033D3BA /* TFQProxySubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQProxySubclass.h; sourceTree = "<group>"; };
 		F7B704F421F023520033D3BA /* TFQProxySubclass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQProxySubclass.m; sourceTree = "<group>"; };
+		F7B704F721F08E070033D3BA /* TFQGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQGCDTimer.h; sourceTree = "<group>"; };
+		F7B704F821F08E070033D3BA /* TFQGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQGCDTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		F79B239120F8493400FCCC9B /* TFQWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
+				F7B704F621F08DD90033D3BA /* TFQGCDTimer */,
 				F7B704EF21F020D80033D3BA /* NSProxy */,
 				F7B704EE21F020B60033D3BA /* TFQProxy */,
 				F79B23A820F849B900FCCC9B /* TFQWeakTimer */,
@@ -113,6 +117,15 @@
 				F7B704F421F023520033D3BA /* TFQProxySubclass.m */,
 			);
 			path = NSProxy;
+			sourceTree = "<group>";
+		};
+		F7B704F621F08DD90033D3BA /* TFQGCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F7B704F721F08E070033D3BA /* TFQGCDTimer.h */,
+				F7B704F821F08E070033D3BA /* TFQGCDTimer.m */,
+			);
+			path = TFQGCDTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +201,7 @@
 			files = (
 				F7B704F221F023170033D3BA /* TFQProxy.m in Sources */,
 				F79B239720F8493400FCCC9B /* ViewController.m in Sources */,
+				F7B704F921F08E070033D3BA /* TFQGCDTimer.m in Sources */,
 				F7B704F521F023520033D3BA /* TFQProxySubclass.m in Sources */,
 				F79B23AB20F84A6100FCCC9B /* TFQWeakTimer.m in Sources */,
 				F79B23A220F8493500FCCC9B /* main.m in Sources */,
