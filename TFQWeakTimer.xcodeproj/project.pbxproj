@@ -18,6 +18,7 @@
 		F7B704F221F023170033D3BA /* TFQProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F121F023170033D3BA /* TFQProxy.m */; };
 		F7B704F521F023520033D3BA /* TFQProxySubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F421F023520033D3BA /* TFQProxySubclass.m */; };
 		F7B704F921F08E070033D3BA /* TFQGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B704F821F08E070033D3BA /* TFQGCDTimer.m */; };
+		F7E7103223D1A7AB0044486F /* TFQWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7103023D1A7AB0044486F /* TFQWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		F7B704F421F023520033D3BA /* TFQProxySubclass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQProxySubclass.m; sourceTree = "<group>"; };
 		F7B704F721F08E070033D3BA /* TFQGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQGCDTimer.h; sourceTree = "<group>"; };
 		F7B704F821F08E070033D3BA /* TFQGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQGCDTimer.m; sourceTree = "<group>"; };
+		F7E7103023D1A7AB0044486F /* TFQWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFQWeakProxy.m; sourceTree = "<group>"; };
+		F7E7103123D1A7AB0044486F /* TFQWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFQWeakProxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		F7B704EE21F020B60033D3BA /* TFQProxy */ = {
 			isa = PBXGroup;
 			children = (
+				F7E7103123D1A7AB0044486F /* TFQWeakProxy.h */,
+				F7E7103023D1A7AB0044486F /* TFQWeakProxy.m */,
 				F7B704F021F023170033D3BA /* TFQProxy.h */,
 				F7B704F121F023170033D3BA /* TFQProxy.m */,
 			);
@@ -204,6 +209,7 @@
 				F7B704F921F08E070033D3BA /* TFQGCDTimer.m in Sources */,
 				F7B704F521F023520033D3BA /* TFQProxySubclass.m in Sources */,
 				F79B23AB20F84A6100FCCC9B /* TFQWeakTimer.m in Sources */,
+				F7E7103223D1A7AB0044486F /* TFQWeakProxy.m in Sources */,
 				F79B23A220F8493500FCCC9B /* main.m in Sources */,
 				F79B239420F8493400FCCC9B /* AppDelegate.m in Sources */,
 				F79B23AE20F84AA600FCCC9B /* TFQSecondController.m in Sources */,
